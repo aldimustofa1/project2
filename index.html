@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Hitung Gaji Karyawan</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Hitung Gaji Karyawan</h1>
+        <div class="input-group">
+            <label for="hourlyRate">Tarif Per Jam (Rp):</label>
+            <input type="number" id="hourlyRate" placeholder="Contoh: 50" required>
+        </div>
+        <div class="input-group">
+            <label for="hoursWorked">Jam Kerja:</label>
+            <input type="number" id="hoursWorked" placeholder="Contoh: 40" required>
+        </div>
+        <div class="input-group">
+            <label for="bonus">Bonus (Rp):</label>
+            <input type="number" id="bonus" placeholder="Contoh: 1000" value="0">
+        </div>
+        <button onclick="calculateSalary()">Hitung Gaji</button>
+        <h2 id="result"></h2>
+        <div class="footer">
+            <p>© 2024 Aldi Mustofa</p>
+            <p>Universitas Putera Batam</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
